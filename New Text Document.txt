@@ -12,3 +12,5 @@ insert into dep values('vinith',212,'dfg')
 select * from dep
 
 new table created above
+
+----------string function---------------
