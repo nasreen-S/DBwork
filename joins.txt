@@ -1,0 +1,51 @@
+create table emp_NF
+(
+emp_id int,
+name varchar(50),
+zipcode varchar(10)
+)
+
+create table address_NF
+(
+zipcode varchar(10),
+city varchar(20),
+country varchar(20)
+)
+
+insert into emp_NF values(1,'nasreen',583121),(2,'fayaz',583101),(3,'aisha',583041),(4,'suma',580402)
+
+insert into address_NF values(583121,'siruguppa','india'),(583101,'ballari','india')
+,(581234,'xyz','india'),(580102,'xyz1','india')
+
+select * from emp_NF
+
+select * from address_NF
+------------inner join-----------------------------
+select e.emp_id,e.name,e.zipcode,a.city,a.country 
+from emp_NF as e
+inner join address_NF as a 
+on e.zipcode=a.zipcode;
+----------------left join--------------------
+
+select e.emp_id,e.name,e.zipcode,a.city,a.country 
+from emp_NF as e
+left join address_NF as a 
+on e.zipcode=a.zipcode;
+
+-----------------right join--------------------
+select e.emp_id,e.name,e.zipcode,a.city,a.country 
+from emp_NF as e
+right join address_NF as a 
+on e.zipcode=a.zipcode;
+
+-------------------full  join------------------
+
+select e.emp_id,e.name,e.zipcode,a.city,a.country 
+from emp_NF as e
+full join address_NF as a 
+on e.zipcode=a.zipcode;
+
+------------------cross join-----------------
+(4*4=16 columns)
+select e.emp_id,e.name,e.zipcode,a.city,a.country 
+from emp_NF as e,address_NF as a 
