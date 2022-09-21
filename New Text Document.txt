@@ -1,0 +1,12 @@
+CREATE TABLE dep
+(
+D_name varchar(30),
+D_number int primary key,
+D_address varchar(30)
+)
+
+insert into dep values('fayaz',102,'xyz')
+insert into dep values('varun',112,'rty')
+insert into dep values('vinith',212,'dfg')
+
+select * from dep
