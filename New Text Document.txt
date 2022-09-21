@@ -10,3 +10,5 @@ insert into dep values('varun',112,'rty')
 insert into dep values('vinith',212,'dfg')
 
 select * from dep
+
+new table created above
