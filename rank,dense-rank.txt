@@ -1,0 +1,19 @@
+create table emp_2n
+(
+e_id int,
+e_name varchar(20),
+e_salary float
+)
+
+insert into emp_2n values(1,'nasreen',20000),(1,'nasreen',20000),(1,'nasreen',20000),
+(2,'fayaz',30000),(2,'fayaz',30000),(2,'fayaz',30000),(3,'saniay',35000),(3,'saniay',35000)
+
+select * from emp_2n
+
+select e_id,
+       e_name,
+       e_salary,
+       row_number() over (order by e_id) as column1,
+      RANK() over (order by e_id) as column2,
+      dense_rank() over (order by e_id) as column3
+from emp_2n
