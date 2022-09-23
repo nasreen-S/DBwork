@@ -1,0 +1,69 @@
+
+-------------------normalization-----------------------
+----------------------first normalization-----------------
+
+create table No_emp
+(
+id int,
+e_name varchar(20),
+e_mobile varchar(15),
+primary key(id)
+)
+insert into No_emp values(12,12,12,'nasreen',9123456780)
+select * from No_emp
+
+create table N1_std
+(
+id int,
+std_name varchar(20),
+primary key(id)
+)
+insert into N1_std values(12,'fayaz'),(13,'yasif') 
+
+select * from N1_std
+
+------------------------2nd normalization----------------
+
+create table N2_emp
+(
+e_id int primary key,
+e_name varchar(20),
+jobtitle varchar(20)
+)
+
+insert into N2_emp values(1,'nasreen','hr'),(2,'saniya','trainee'),(3,'yasif','developer')
+
+select * from N2_emp
+
+create table N2_jobtitle
+(
+job_id int primary key,
+jobtitle varchar(20),
+)
+insert into N2_jobtitle values(1,'hr'),(2,'trainee'),(3,'developer')
+
+select * from N2_jobtitle
+
+------------------------------------3rd normalization--------------------
+
+create table N3_student
+(
+std_id int primary key,
+std_name varchar(20),
+std_add varchar(20)
+)
+insert into N3_student values(123456,'nasreen','ballari'),
+(234156,'fayaz','banglore'),
+(654321,'yasif','sgp')
+
+select * from N3_student
+
+create table N3_subject
+(
+sub_id int primary key,
+subject varchar(30)
+)
+
+insert into N3_subject values(123456,'sql'),(234156,'html'),(654321,'java')
+
+select * from N3_subject
