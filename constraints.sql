@@ -51,7 +51,7 @@ insert into employee_NF(e_id,e_name,e_age,join_date) values(123,'saniya',24,'202
 
 select * from employee_NF
 
-
+------------constraints created--------------------
 
 
 
