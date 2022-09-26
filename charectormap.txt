@@ -1,0 +1,24 @@
+CREATE TABLE AC_STORE(
+Row_ID FLOAT,
+Order_ID VARCHAR(255),	
+OrderDate DATE,
+ShipDate DATE,	
+Ship_Mode VARCHAR(255),	
+Customer_ID VARCHAR(255),	
+Customer_Name VARCHAR(255),
+Segment VARCHAR(255),
+Country varchar(255),
+city varchar(255),
+State VARCHAR(255),
+Postal_Code int,
+Region VARCHAR(255),	
+Product_ID varchar(255),	
+Category VARCHAR(255),
+Sub_Category VARCHAR(255),	
+Product_name VARCHAR(255),
+Sales VARCHAR(20),	
+Quantity INT,	
+Discount DECIMAL(2,2),	
+Profit VARCHAR(20)
+);
+SELECT * FROM superstore;
