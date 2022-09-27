@@ -1,0 +1,26 @@
+source flat file
+
+e_id,e_name,e_salary,e_dsg
+20,yasif,20000,developer
+40,nasreen,25000,trainee
+30,fayaz,30000,hr
+50,ramija,45000,Teamleader
+10,nasreen,50000,engineer
+102,saniya,45000,developer
+
+target
+
+create table lookup_n
+(
+e_id int,
+e_name varchar(20),
+e_salary float,
+e_dsg varchar(20)
+)
+
+
+update lookup_n
+set e_name=?,
+e_dsg=?,
+e_salary=?
+where e_id=?;
