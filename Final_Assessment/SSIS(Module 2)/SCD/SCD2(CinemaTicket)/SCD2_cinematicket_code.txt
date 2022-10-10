@@ -1,0 +1,45 @@
+CREATE TABLE Nasreen_FA_CinemaTicket (
+    [Film_Type] nvarchar(255),
+    [film_code] float,
+    [cinema_code] float,
+    [total_sales] float,
+    [tickets_sold] float,
+    [tickets_out] float,
+    [show_time] float,
+    [occu_perc] float,
+    [ticket_price] float,
+    [ticket_use] float,
+    [capacity] float,
+    [date] float,
+    [month] float,
+    [quarter] float,
+    [day] float
+)
+
+
+select * from Nasreen_FA_CinemaTicket
+
+
+-----------------------------------------------SCD2 cinematicket code----------------------
+
+CREATE TABLE Nasreen_FA_CinemaTicket_SCD2 (
+    [Film_Type] nvarchar(255),
+    [film_code] float,
+    [cinema_code] float,
+    [total_sales] float,
+    [tickets_sold] float,
+    [tickets_out] float,
+    [show_time] float,
+    [occu_perc] float,
+    [ticket_price] float,
+    [ticket_use] float,
+    [capacity] float,
+    [date] datetime,
+    [month] float,
+    [quarter] float,
+    [day] float,
+    [start_date] datetime,
+    [End_date] datetime
+)
+
+select * from Nasreen_FA_CinemaTicket_SCD2

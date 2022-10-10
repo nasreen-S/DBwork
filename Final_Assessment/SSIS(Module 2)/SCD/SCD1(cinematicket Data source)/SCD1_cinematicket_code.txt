@@ -1,0 +1,51 @@
+
+CREATE TABLE Nasreen_FA_CinemaTicket (
+    [Film_Type] nvarchar(255),
+    [film_code] float,
+    [cinema_code] float,
+    [total_sales] float,
+    [tickets_sold] float,
+    [tickets_out] float,
+    [show_time] float,
+    [occu_perc] float,
+    [ticket_price] float,
+    [ticket_use] float,
+    [capacity] float,
+    [date] float,
+    [month] float,
+    [quarter] float,
+    [day] float
+)
+
+
+select * from Nasreen_FA_CinemaTicket
+
+--update  Nasreen_FA_CinemaTicket set film_type='Action',film_code=2120
+---where cinema_code='71';
+
+update Nasreen_FA_CinemaTicket set film_type='Triller',film_code=2025
+where cinema_code=304;
+
+------------------------------------SCD1 target table-------------------------------------
+
+
+CREATE TABLE Nasreen_FA_CinemaTicket_SCD1 (
+    [Film_Type] nvarchar(255),
+    [film_code] float,
+    [cinema_code] float,
+    [total_sales] float,
+    [tickets_sold] float,
+    [tickets_out] float,
+    [show_time] float,
+    [occu_perc] float,
+    [ticket_price] float,
+    [ticket_use] float,
+    [capacity] float,
+    [date] float,
+    [month] float,
+    [quarter] float,
+    [day] float
+)
+
+
+select * from Nasreen_FA_CinemaTicket_SCD1
