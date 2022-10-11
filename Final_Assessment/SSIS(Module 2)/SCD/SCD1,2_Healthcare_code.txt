@@ -1,0 +1,107 @@
+----------------------SSIS Final Assessment-----------
+
+--------------------source table-------------
+CREATE TABLE Nasreen_FA_Healthdata (
+    [PID] float,
+    [AGE] float,
+    [GENDER] nvarchar(255),
+    [CASTE_NAME] nvarchar(255),
+    [CATEGORY_CODE] nvarchar(255),
+    [CATEGORY_NAME] nvarchar(255),
+    [SURGERY_CODE] nvarchar(255),
+    [SURGERY] nvarchar(255),
+    [VILLAGE] nvarchar(255),
+    [MANDAL_NAME] nvarchar(255),
+    [DISTRICT_NAME] nvarchar(255),
+    [PREAUTH_DATE] datetime,
+    [PREAUTH_AMT] float,
+    [CLAIM_DATE] datetime,
+    [CLAIM_AMOUNT] float,
+    [HOSP_NAME] nvarchar(255),
+    [HOSP_TYPE] nvarchar(255),
+    [HOSP_DISTRICT] nvarchar(255),
+    [SURGERY_DATE] datetime,
+    [DISCHARGE_DATE] datetime,
+    [Mortality Y / N] nvarchar(255),
+    [MORTALITY_DATE] datetime,
+    [SRC_REGISTRATION] nvarchar(255)
+)
+
+--truncate table Nasreen_FA_Healthdata
+
+select * from Nasreen_FA_Healthdata
+
+update  Nasreen_FA_Healthdata
+set age=55,gender='female',caste_name='BC' where pid=1;
+
+
+
+--update Nasreen_FA_Healthdata
+--set age=47,caste_name='OC' where pid=1
+
+
+-----------------------------------target table----------
+
+CREATE TABLE Nasreen_FA_Healthdata_SCD1_trg (
+    [PID] float,
+    [AGE] float,
+    [GENDER] nvarchar(255),
+    [CASTE_NAME] nvarchar(255),
+    [CATEGORY_CODE] nvarchar(255),
+    [CATEGORY_NAME] nvarchar(255),
+    [SURGERY_CODE] nvarchar(255),
+    [SURGERY] nvarchar(255),
+    [VILLAGE] nvarchar(255),
+    [MANDAL_NAME] nvarchar(255),
+    [DISTRICT_NAME] nvarchar(255),
+    [PREAUTH_DATE] datetime,
+    [PREAUTH_AMT] float,
+    [CLAIM_DATE] datetime,
+    [CLAIM_AMOUNT] float,
+    [HOSP_NAME] nvarchar(255),
+    [HOSP_TYPE] nvarchar(255),
+    [HOSP_DISTRICT] nvarchar(255),
+    [SURGERY_DATE] datetime,
+    [DISCHARGE_DATE] datetime,
+    [Mortality Y / N] nvarchar(255),
+    [MORTALITY_DATE] datetime,
+    [SRC_REGISTRATION] nvarchar(255)
+)
+
+select * from Nasreen_FA_Healthdata_SCD1_trg
+
+--truncate table Nasreen_FA_Healthdata_SCD1_trg
+
+--truncate table Nasreen_FA_Healthdata_SCD1_trg
+
+----------------------------------------------------------------------------
+
+CREATE TABLE Nasreen_FA_Healthdata_SCD2_trg (
+    [PID] float,
+    [AGE] float,
+    [GENDER] nvarchar(255),
+    [CASTE_NAME] nvarchar(255),
+    [CATEGORY_CODE] nvarchar(255),
+    [CATEGORY_NAME] nvarchar(255),
+    [SURGERY_CODE] nvarchar(255),
+    [SURGERY] nvarchar(255),
+    [VILLAGE] nvarchar(255),
+    [MANDAL_NAME] nvarchar(255),
+    [DISTRICT_NAME] nvarchar(255),
+    [PREAUTH_DATE] datetime,
+    [PREAUTH_AMT] float,
+    [CLAIM_DATE] datetime,
+    [CLAIM_AMOUNT] float,
+    [HOSP_NAME] nvarchar(255),
+    [HOSP_TYPE] nvarchar(255),
+    [HOSP_DISTRICT] nvarchar(255),
+    [SURGERY_DATE] datetime,
+    [DISCHARGE_DATE] datetime,
+    [Mortality Y / N] nvarchar(255),
+    [MORTALITY_DATE] datetime,
+    [SRC_REGISTRATION] nvarchar(255),
+    start_date datetime,
+    End_date datetime
+)
+
+select * from Nasreen_FA_Healthdata_SCD2_trg
