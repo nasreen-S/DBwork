@@ -1,0 +1,38 @@
+
+----------------------------- final Assessment------------------
+
+---------------IICS SCD1 src Table-------------
+
+
+CREATE TABLE IICS_SCD2_healthcare_src(
+    [PID] float,
+    [GENDER] nvarchar(255),
+    [CATEGORY_NAME] nvarchar(255),
+    [PREAUTH_AMT] float,
+    [CLAIM_AMOUNT] float,
+    [HOSP_NAME] nvarchar(255)
+)
+
+select * from IICS_SCD2_healthcare_src
+
+update IICS_SCD2_healthcare_src
+set Category_name='ABC',gender='male' where PID = 1;
+
+
+
+-----------------------IICS SCD1 trg table---------------------
+
+
+CREATE TABLE FA_IICS_SCD1_healthcare_trg (
+    [T_key] int,
+    [T_PID] int,
+    [T_GENDER] nvarchar(255),
+    [T_CATEGORY_NAME] nvarchar(255),
+    [T_PREAUTH_AMT] float,
+    [T_CLAIM_AMOUNT] float,
+    [T_HOSP_NAME] nvarchar(255),
+    [T_checksum] nvarchar(255)
+ 
+)
+
+select * from FA_IICS_SCD1_healthcare_trg
