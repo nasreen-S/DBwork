@@ -1,0 +1,32 @@
+    Loan Approval of Customer
+
+    Variable name           Datatype       Declaration  
+
+
+     LoanNr_ChkDgt         float           Identifier          
+     Name                  nvarchar        Borrower name
+     City                  nvarchar        Borrower city
+     State                 nvarchar        Borrower state
+     Zip                   float           Borrower Zip code
+     Bank                  nvarchar        Bank name
+     BankState             nvarchar        Bank state
+     NAICS                 float           North American industry classification system code
+     ApprovalDate          datetime        Approval date of Loan
+     ApprovalFY            float           Fiscal year of commitment
+     Term                  float           Loan terms in months
+     NoEmp                 float           Number of Business employees
+     NewExist              float           Existing buisness,new business
+     CreateJob             float           Number of jobs created 
+     RetainedJob           float           Number of jobs retained
+     FranchiseCode         float           Franchise code
+     UrbanRural            float           1=urban,2=rural,0=undefined
+     RevLineCr             nvarchar        Revolving line of credit,Y=yes,N=no   
+     LowDoc                nvarchar        Lowdoc loan program Y=yes,N=no
+     ChgOffDate            datetime        date when loan is declared to be default
+     DisbursementDate      datetime        Disbursement date
+     DisbursementGross     nvarchar        Amount disbursed
+     BalanceGross          nvarchar        Gross amount outstanding
+     MIS_Status            nvarchar        Loan status charged off=chgoff,pif=paid in full
+     ChgOffPrinGr          nvarchar        change of Amount
+     GrAppv                nvarchar        Gross amount of loan approved by bank
+     SBA_Appv              nvarchar        SBA guaranted amount of approved loan
