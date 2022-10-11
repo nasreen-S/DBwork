@@ -1,0 +1,26 @@
+
+CREATE TABLE Nasreen_FA_CinemaTicket (
+    [Film_Type] nvarchar(255),
+    [film_code] float,
+    [cinema_code] float,
+    [total_sales] float,
+    [tickets_sold] float,
+    [tickets_out] float,
+    [show_time] float,
+    [occu_perc] float,
+    [ticket_price] float,
+    [ticket_use] float,
+    [capacity] float,
+    [date] float,
+    [month] float,
+    [quarter] float,
+    [day] float
+)
+
+
+select * from Nasreen_FA_CinemaTicket
+
+
+-------------------------------target table--------------
+
+select * from IICS_Aggregate_cinematicket
