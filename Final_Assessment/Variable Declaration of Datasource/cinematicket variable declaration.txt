@@ -1,0 +1,21 @@
+    Cinema Ticket Booking
+
+     Variables Name         Datatypes           Declaration
+
+
+     Film_Type              nvarchar            Name of film type             
+     film_code              float               code of film type
+     cinema_code            float               code of cinema name
+     total_sales            float               Total sales of tickets booking
+     tickets_sold           float               number of tickets sold w.r.t to film type
+     tickets_out            float               Number of tickets out for Booking
+     show_time              float               Time of show/cinema 
+     occu_perc              float               Percentage of occupied seats
+     ticket_price           float               price of ticket w.r.t to film type
+     ticket_use             float               Number of tickets used 
+     capacity               float               Capacity of thearter
+     date                   datetime            Date of film/cinema Booking 
+     month                  float               Month on which you want to book the film
+     quarter                float               Quarter of booking done 
+     day                    float               On which day you want to book the film
+  

@@ -1,0 +1,37 @@
+Car shipment Datasource
+
+Variables Name                   Datatypes                Declaration
+
+SupplierID	                     Float                    Number of supplier done
+SupplierAddress                  nvarchar                 Address of supplier
+SupplierName	               varchar                  Name of supplier
+SupplierContactDetails	         nvarchar                 Contact details of supplier
+ProductID	                     float                    car id or product id
+CarMaker	                     nvarchar                 Name of product or car
+CarModel	                     nvarchar                 Name of car model
+CarColor	                     nvarchar                 Color of car
+CarModelYear                     float 	                year of car model produced 
+CarPrice	                     float                    price of car 
+CustomerID	                     nvarchar                 Id of customer 
+CustomerName	               varchar                  Name of customer 
+Gender	                     varchar                  Gender of customer
+JobTitle	                     varchar                  Job title of customer
+PhoneNumber	                     nvarchar                 Phone number of customer 
+EmailAddress	               nvarchar                 Email address of customer
+City	                           varchar                  City of customer
+Country	                     varchar                  country of customer
+CountryCode	                     nvarchar                 country code of customer
+State	                           varchar                  state of customer
+CustomerAddress	               nvarchar                 Address of customer
+OrderDate	                     datetime                 order date of car/product   
+OrderID	                     float                    Order id of car
+ShipDate	                     datetime                 Shipping date of car to customer
+ShipMode	                     nvarchar                 Shipping mode of car
+Shipping	                     nvarchar                 Way of shipping car to customer
+PostalCode	                     float                    Postal code of car
+Sales	                           float                    sales of car done
+Quantity	                     float                    Quantity product
+Discount	                     float                    Discount given on product
+CreditCardType	               nvarchar                 Creditcard type for payment
+CreditCard	                     float                    credit card number of customer
+CustomerFeedback                 nvarchar                 Customer feedback of car/product

@@ -1,0 +1,27 @@
+    Healthcare details of patients
+   
+    Variable name           Datatype        Declaration
+
+     PID                    float           Patient id number
+     AGE                    float           Age of the patient
+     GENDER                 nvarchar        Gender of the patient
+     CASTE_NAME             nvarchar        Caste name of patient
+     CATEGORY_CODE          nvarchar        Category code of patient
+     CATEGORY_NAME          nvarchar        Category name of patient
+     SURGERY_CODE           nvarchar        Surgery code of patient
+     SURGERY                nvarchar        Surgery name of patient
+     VILLAGE                nvarchar        Village name of patient
+     MANDAL_NAME            nvarchar        Mandal name of patient   
+     DISTRICT_NAME          nvarchar        District name of patient
+     PREAUTH_DATE           datetime        Health insurence date
+     PREAUTH_AMT            float           Health insurence amount
+     CLAIM_DATE             datetime        date of request for payment 
+     CLAIM_AMOUNT           float           Amount request for healthcare provider
+     HOSP_NAME              nvarchar        Name of Hospital of patient
+     HOSP_TYPE              nvarchar        Hospital type of patient
+     HOSP_DISTRICT          nvarchar        District name of hospital
+     SURGERY_DATE           datetime        Surgery date of patient
+     DISCHARGE_DATE         datetime        Discharge date of patient
+     Mortality Y / N        nvarchar        Mortality status of patient 
+     MORTALITY_DATE         datetime        Mortality date of patient
+     SRC_REGISTRATION       nvarchar        Source of registration of patient
