@@ -322,7 +322,7 @@ from medicine_details as D,Healthcare_domain_FA as F
 
 ----------------------------------------DDL commands--------------------------------
 
-select * from Nasreen_FA_Healthdata 
+select * from Nasreen_FA_Helthdata 
 
 alter table Nasreen_FA_Healthdata add new_column int;
 
@@ -346,15 +346,29 @@ delete from Nasreen_FA_Healthdata where pid=301
 select * from Nasreen_FA_Healthdata 
 
 
+-------------------------car shipment-----------------------
 
+------------------------------DDL commands-------------------
 
+select * from SSRS_carshipment_trg
 
+alter table SSRS_carshipment_trg  add new_column int;
 
+ALTER TABLE  SSRS_carshipment_trg DROP column new_column;
 
+truncate table SSRS_carshipment_trg
 
+drop table SSRS_carshipment_trg
 
+---------------------------------------DML commands-------------------
 
+select * from SSRS_carshipment_trg
 
+insert into SSRS_carshipment_trg  (supplieraddress,suppliername) values ('ABC','XYZ')
+
+update SSRS_carshipment_trg set productid=5505 where supplierid=1
+
+delete from SSRS_carshipment_trg where supplierid=7;
 
 
 
