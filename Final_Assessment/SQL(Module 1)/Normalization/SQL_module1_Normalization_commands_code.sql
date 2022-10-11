@@ -364,16 +364,15 @@ drop table SSRS_carshipment_trg
 
 select * from SSRS_carshipment_trg
 
-insert into SSRS_carshipment_trg  (supplieraddress,suppliername) values ('ABC','XYZ')
 
 update SSRS_carshipment_trg set productid=5505 where supplierid=1
 
-delete from SSRS_carshipment_trg where supplierid=7;
+delete from SSRS_carshipment_trg where supplierid=8;
 
 
+------------------------------DQL commands-------------------
 
-
-
+select * from SSRS_carshipment_trg
 
 
 
