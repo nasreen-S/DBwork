@@ -87,9 +87,12 @@ gender varchar(30)
 insert into Patient_details1 values(1,'veena',20,'male'),
 (2,'Dr.ramesh',57,'male'),
 (3,'Dr.mehesh',45,'male'),
-(4,'Dr.madhu',56,'male'),(5,'Dr.kumar',47,'male'),
-(6,'Dr.giri',48,'male'),(7,'Dr.Anil',35,'male'),
-(8,'Dr.madhusudhan',39,'male'),(9,'Dr.Ahmad',40,'male'),
+(4,'Dr.madhu',56,'male'),
+(5,'Dr.kumar',47,'male'),
+(6,'Dr.giri',48,'male'),
+(7,'Dr.Anil',35,'male'),
+(8,'Dr.madhusudhan',39,'male'),
+(9,'Dr.Ahmad',40,'male'),
 (10,'Dr.padma',50,'female')
 
 select * from Patient_details1
@@ -149,6 +152,7 @@ select * from medicine_details
 ----drop table medicine_details 
 
 
+
 --------------------------------Views-----------------------
 
 create view view_table
@@ -157,10 +161,10 @@ select * from Healthcare_domain_FA
 
 select * from view_table
 
+
+
 ------------------------------------------joins in  tables-------------------
-
 ---------------------------inner joins----------------------
-
 ---------------------------------main table and hospital table joins--------------
 
 select F.id,F.Hospital_details,F.Patient_details,F.treatment_type,
@@ -289,6 +293,29 @@ F.Medicines_details,D.Drug_name,D.Administration_route
 from medicine_details as D
 full join Healthcare_domain_FA as F
 on D.D_id=F.id
+
+--------------------------------------------------Cross join------------------
+select F.id,F.Hospital_details,F.Patient_details,F.treatment_type,
+F.Medicines_details,A.H_id,A.Doctor_name,A.H_location
+from Hospital_details1 as A,Healthcare_domain_FA as F
+
+-----------------
+
+select F.id,F.Hospital_details,F.Patient_details,F.treatment_type,
+F.Medicines_details,B.P_id,B.P_name,B.P_age,B.Gender
+from Patient_details1 as B,Healthcare_domain_FA as F
+
+------------------
+
+select F.Hospital_details,F.Patient_details,F.treatment_type,
+F.Medicines_details,C.T_name,C.T_checkup_type,C.T_price
+from treatment_type1 as C,Healthcare_domain_FA as F
+
+------------------------
+
+select F.Hospital_details,F.Patient_details,F.treatment_type,
+F.Medicines_details,D.Drug_name,D.Administration_route
+from medicine_details as D,Healthcare_domain_FA as F
 
 
 -------------------------------------------task 2 using DDL,DML,DCL------------------
